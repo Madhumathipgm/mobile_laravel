@@ -1,0 +1,74 @@
+
+table{
+    width: 25%;
+    table-layout: fixed;
+
+}
+th{
+    text-align: left ;
+    background-color: rgb(206, 204, 204);
+    padding: 7px;
+
+}
+table,th,td{
+    border: 1px solid    rgb(219, 218, 218);
+    border-collapse: collapse;
+}
+td,tr{
+    padding: 7px;
+
+}
+td{
+ vertical-align: top;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 130%;
+    padding: 10px;
+    text-align: center;
+}
+
+table.dataTable{
+    margin: 5px;
+     
+}
+
+
+.toggle{
+    padding-bottom: 20px;
+    padding-left:200px;
+}
+.toggle a:hover{
+    color: rgb(63, 12, 247);
+    text-decoration: underline;
+}
+#modelsTable_wrapper{
+    width: 50%;
+    margin-left: 200px;
+}
+#package_wrapper,#attributes_wrapper{
+    width:30%;
+    margin-left: 200px;
+
+  
+}
+#package tr{
+    height:50px;
+}
+
+
+#categories_wrapper,#carSeals_wrapper,#features_wrapper{
+    width:50%;
+    margin-left: 200px;
+}
+.attr-list{
+   line-height: 25px;
+}
+
+
+
+
+
+
+

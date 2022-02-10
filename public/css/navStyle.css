@@ -1,0 +1,111 @@
+.container{
+    width:80%;
+    margin: 0 auto;
+    
+}
+header{
+    background-color: rgb(211, 207, 207);
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    
+}
+header::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+.title{
+   float: left;
+   font-size: 20px;
+   font-weight: bold;
+  
+   padding: 5px 0;
+   
+   
+}
+
+nav{
+   float:right ;
+
+}
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+nav li{
+    display:inline-block;
+    margin-left :60px;
+    padding-top: 25px;
+    position: relative;
+}
+nav a{
+    color:black;
+    text-decoration:none ;
+    font-size: 18px;
+    
+}
+nav a:hover,.dropdown:hover .dropbtn,.attributes:hover .dropbtn{
+    color: rgb(241, 244, 248);
+}
+nav a::before,.dropdown:hover .dropbtn::before,.dropdown:hover .dropdown-content a::before,.attributes:hover .dropbtn::before,.attributes:hover .attributes-content a::before{
+    content: '';
+    display: block;
+    height:5px;
+    background-color: rgb(78, 77, 77);
+    position: absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 25ms;
+}
+nav a:hover::before,.dropdown:hover .dropbtn::before,.attributes:hover .dropbtn::before{
+    width: 100%;
+}
+.dropdown{
+    float:left;
+    overflow:hidden;
+}
+.dropdown .dropbtn,.attributes .dropbtn{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color:black;
+    font-family: inherit;
+    padding-top: 25px;
+    background-color:rgb(211, 207, 207) ;
+    margin: 0;
+    position: relative;
+}
+.dropdown-content,.attributes-content{
+    display: none;
+    position: absolute;
+    background-color:rgb(211, 207, 207) ;
+    min-width: 150px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a,.attributes-content a{
+    float:none;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+.dropdown-content a:hover ,.attributes-content a:hover{
+    background-color:white;
+    color: inherit;
+}
+.dropdown:hover .dropdown-content, .attributes:hover .attributes-content{
+    display: block;
+}
+.attributes{
+    float:right;
+    overflow:hidden;
+    padding-left: 35px;
+}
+
+
